@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #192833;
+}
+#home-map {
+  margin: 0 auto;
+  padding-top: 80px;
+  z-index: 1;
+}
+#home-map img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 1;
+  display: block;
+}
+/* .toprow, .middlerow, .bottomrow {
+  width: 100%;
+} */
+.toprow, .bottomrow {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.middlerow {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  height: auto;
+}
+.middlerow {
+  display: flex;
+  justify-content: center;
+
+}
+.middlerow img {
+  z-index: 2;
+
+  /* height: */
+}
+.icon {
+  transition: .2s;
+  /* width: 250px; */
+  /* height: 200px; */
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.icon img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+.line1 {
+  position: absolute;
+  width: 95%;
+  height: 100px;
+  z-index: 0;
+  border-bottom: 3px dashed gray;
+  -ms-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(-20deg);
+  transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(-20deg);
+  -webkit-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(-20deg);
+  position: absolute;
+  top: 200px;
+  left: 25px;
+}
+.line2 {
+  position: absolute;
+  width: 95%;
+  height: 100px;
+  z-index: 0;
+  border-bottom: 3px dashed gray;
+  -ms-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(20deg);
+  transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(20deg);
+  -webkit-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(20deg);
+  position: absolute;
+  top: 200px;
+  left: 60px;
+}
+.line3 {
+  position: absolute;
+  width: 40%;
+  height: 100px;
+  z-index: 0;
+  border-bottom: 3px dashed gray;
+  -ms-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(90deg);
+  transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(90deg);
+  -webkit-transform:
+  translateY(20px)
+  translateX(5px)
+  rotate(90deg);
+  position: absolute;
+  top: 250px;
+  left: 34%;
+}
+
+.star {
+  position: absolute;
+  z-index: 0;
+  transform: scale(.5);
+}
+#star1 {
+  left: 900px;
+  top: 500px;
+}
+#star2 {
+  left: 300px;
+  top: 300px;
+}
+#star3 {
+  left: 700px;
+  top: 100px;
+}
+#star4 {
+  left: 400px;
+  top: 50px;
+}
+#star5 {
+  left: 450px;
+  top: 450px;
+}
+#star6 {
+  left: 950px;
+  top: 250px;
+}
+#star7 {
+  top: 280px;
+  left: 1000px;
+}
+#star8 {
+  top: 60px;
+  left: 350px;
+}
+#star9 {
+  top: 330px;
+  left: 60px;
+}
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+} */
+.tooltiptext {
+    display: none;
+    width: 120px;
+    background: #fff;
+    color: #192833;
+    text-align: center;
+    padding: 5px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+}
+
+.tip:hover .tooltiptext {
+    display: block;
+}
+.fa {
+  position: absolute;
+  color: #D0CCD0;
+  font-size: 36px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+nav .fa {
+  position: relative;
+  color: #192833;
+  /* padding-top: -20px;
+  padding-left: -20px; */
+}
+.nav {
+  background: #D0CCD0;
+  color: #192833;
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.active {
+  color: #469BBC !important;
+  cursor: pointer;
+}
+.active:hover {
+  color: #47535C !important;
+}
+#profile {
+  width: 150px;
+  height: 150px;
+  object-position: center;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px 10px 0 10px;
+  cursor: pointer;
+}
+.contact {
+  margin-top: 50px;
+}
+h3 {
+  margin: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+h5{
+  margin: 0;
+  padding-bottom: 20px;
+  cursor: pointer;
+  /* padding-left: 25px; */
+}
+.img-thumbnail{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+.projects {
+  color: #fff;
+}
+.projects h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 48px;
+  padding: 30px 0 0 0;
+}
+.projects .row {
+  margin-bottom: 30px;
+}
+.projects h2 {
+  margin: 0;
+  padding: 3px;
+  font-size: 22px;
+}
+.projects a {
+  color: #fff;
+}

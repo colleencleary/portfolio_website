@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Neutralizer</title>
+
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/foyer.js" charset="utf-8"></script>
+  <script src="js/library.js" charset="utf-8"></script>
+  <script src="js/sittingroom.js" charset="utf-8"></script>
+  <script src="js/bedroom.js" charset="utf-8"></script>
+  <script src="js/kitchen.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Ghost Neutralizer</h1>
+  </header>
+
+  <div id="start" style="overflow: visible;">
+    <h2 style="margin-top: -30px;">Who do people call when there's something strange in the neighborhood?</h2>
+    <h2 style="width: 75%; border-bottom: 1px solid rgba(109,83,165, .9)">You!</h2>
+    <p>As a paranormal investigator, people often come to you with stories that most would have a hard time believing.</p>
+    <p>Use your investigative skills to solve their supernatural cases.</p>
+    <button id="startButton" type="button" name="button">start</button>
+  </div>
+
+  <div class="main room">
+    <div class="contain-healthbars">
+      <div class=health-container>
+        <div id="investigator-health">
+          <p id="investigator-percenthealth" class="health-text"></p>
+        </div>
+      </div>
+      <div class=health-container>
+        <div id="ghost-health">
+        <p id="ghost-percenthealth" class="health-text"></p>
+      </div>
+      </div>
+    </div>
+    <img id="protonPack"src="img/protonpack.gif">
+    <div id="dialogue">
+      <p>A potential client has reached out to you with a new case:</p>
+
+      <p>Mr. Smith recently inherited a mansion from a distant, elderly relative. The mansion needs a lot of work, so Mr. Smith has begun renovations. </p>
+
+      <p>In the middle of construction, the crew hired by Mr. Smith abandoned their work and refused to return to the mansion without an explanation.</p>
+      <button id="nextButton" type="button" name="button">next</button>
+    </div>
+  </div>
+  <div class="foyer room"></div>
+  <div class="library room"></div>
+  <div class="sittingRoom room"></div>
+  <!-- <div class="diningRoom"></div> -->
+  <div class="kitchen room"></div>
+  <div class="bedroom room"></div>
+  <div class="end room"></div>
+  <!-- <div class="greenhouse room"></div> -->
+</body>
+
+</html>
